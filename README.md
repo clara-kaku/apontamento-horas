@@ -1,2 +1,2 @@
-# apontamento-horas
+# Apontamento de horas
 Website feito em bootstrap 4, Angular e Chart.js.
