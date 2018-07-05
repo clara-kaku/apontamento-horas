@@ -10,16 +10,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/dashboard.css" rel="stylesheet">
     <link href="css/responsive.table.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
 
   </head>
   <body>
      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-       <!-- <img src="imgs/logo2.svg" width="50" height="45"><!--<a class="navbar-brand" href="#"></a>-->
+       <!-- <img src="imgs/logo2.svg" width="50" height="45"><!<a class="navbar-brand" href="#"></a>-->
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
        <div class="collapse navbar-collapse" id="navbarNav">
          <ul class="navbar-nav ml-auto w-100 justify-content-end">
+           <li class="nav-item">
+             <a class="nav-link icon-option" href="login.html">
+               <img src="imgs/logout.svg" class="img-space" width="20" height="20">Log out</a>
+           </li>
            <li class="nav-item">
              <a class="nav-link icon-option" href="#">
                <img src="imgs/user_01.svg" class="img-space" width="25" height="25">Lisa Sherman</a>
@@ -34,14 +39,14 @@
             <div class="row">
                 <div class="col-3">
                   <div class="input-group mb-3 mt-3">
-                    <input type="text" class="form-control" value="07/02/2018 - 07/07/2018" placeholder="Select week..." aria-label="datepicker" aria-describedby="datepicker">
-                    <div class="input-group-append">
-                      <button class="btn" type="button"><img src="imgs/calendar.svg" width="20" height="20"></button>
-                    </div>
+                      <input type="text" class="form-control" value="07/02/2018 - 07/07/2018" placeholder="Search">
+                      <div class="input-group-append">
+                        <button class="btn" type="button"><img src="imgs/calendar.svg" width="20" height="20"></button>
+                      </div>
                   </div>
                 </div>
                 <div class="col-9">
-                  <button class="btn btn-outline-dark mb-3 mt-3 float-right" type="button">+ Add activity row</button>
+                  <button class="btn btn-outline-info mb-3 mt-3 float-right" type="button">+ Add activity row</button>
                 </div>
             </div>
             <div class="table-responsive-lg">
@@ -94,7 +99,7 @@
                       <td class="table-secondary font-weight-bold">9</td>
                     </tr>
                  </tbody>
-                 <tfoot class="table-secondary font-weight-bold">
+                 <tr class="table-secondary font-weight-bold">
                    <td></td>
                    <td>-</td>
                    <td>8</td>
@@ -104,11 +109,11 @@
                    <td>8</td>
                    <td>-</td>
                    <td>40</td>
-                 </tfoot>
+                 </tr>
              </table>
            </div>
              <div class="row">
-               <div class="col"><button type="button" class="btn btn-outline-info mb-3 float-right">Submit</button></div>
+               <div class="col"><button type="button" class="btn btn-outline-dark mb-3 float-right">Submit</button></div>
              </div>
 
         </div>

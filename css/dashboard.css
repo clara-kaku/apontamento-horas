@@ -58,21 +58,21 @@ tbody {
 }
 
 .input-group {
-  background: white !important;
+  background: transparent !important;
 }
 
 .input-group .form-control {
-  border-right: 0;
-	border-color: #ccc;
-  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #474747;
 }
 .input-group-append button {
-  border-left: 0;
+  border: none;
+  /* border-left: 0;
   box-shadow: 0 0 0;
   border-right: 1px solid #ccc;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 5px; */
   background: transparent;
 }
 
