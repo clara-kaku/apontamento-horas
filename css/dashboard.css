@@ -132,14 +132,14 @@ tbody {
   color: #fff;
 }
 
-.tile-progress.tile-red {
+.tile-red {
   background-color: #DC3545;
 }
 
-.tile-progress.tile-blue {
+.tile-blue {
   background-color: #2455A4;
 }
 
-.tile-progress.tile-purple {
+.tile-purple {
   background-color: #9127AB;
 }
