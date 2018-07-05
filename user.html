@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../../../favicon.ico">-->
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <!-- <img src="imgs/logo2.svg" width="50" height="45"><!<a class="navbar-brand" href="#"></a>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link icon-option" href="dashboard.html">
+              <img src="imgs/dashboard.svg" class="img-space" width="20" height="20">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link icon-option" href="project.html">
+              <img src="imgs/project.svg" class="img-space" width="20" height="20">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link icon-option" href="user.html">
+              <img src="imgs/users.svg" class="img-space" width="20" height="20">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link icon-option" href="login.html">
+              <img src="imgs/logout.svg" class="img-space" width="20" height="20">Log out</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link icon-option" href="#">
+              <img src="imgs/user.svg" class="img-space" width="25" height="25">Admin</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <p class="display-4 text-title">Create User</p>
+
+      <div class="container table-wrapper">
+         <form class="container">
+           <div class="row pt-2">
+             <div class="col">
+                <div class="form-label-group">
+                    <input type="text" id="inputFirst" class="form-control form-transparent-input" placeholder="Fist Name" required autofocus>
+                    <label for="inputFirst">First Name</label>
+                </div>
+             </div>
+
+             <div class="col">
+                <div class="form-label-group">
+                    <input type="text" id="inputLast" class="form-control form-transparent-input" placeholder="Last Name" required autofocus>
+                    <label for="inputLast">Last Name</label>
+                </div>
+             </div>
+           </div>
+
+           <div class="row pt-2">
+             <div class="col">
+                <div class="form-label-group">
+                    <input type="email" id="inputEmail" class="form-control form-transparent-input" placeholder="Email address" required autofocus>
+                    <label for="inputEmail">Email address</label>
+                 </div>
+             </div>
+
+             <div class="col">
+                <div class="form-label-group">
+                    <input type="text" id="inputPhone" class="form-control form-transparent-input" placeholder="Phone" required autofocus>
+                    <label for="inputPhone">Phone</label>
+                </div>
+             </div>
+           </div>
+
+           <div class="row pt-2">
+             <div class="col">
+                <div class="form-label-group">
+                    <input type="text" id="inputBirth" class="form-control form-transparent-input" placeholder="Date of birth" required autofocus>
+                    <label for="inputBirth">Date of birth</label>
+                </div>
+             </div>
+             <div class="col">
+                <p class="text-label color-label m-1">Roles</p>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label color-label" for="customRadioInline1">Administrator</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label color-label" for="customRadioInline2">User</label>
+                </div>
+             </div>
+           </div>
+          </form>
+          <div class="row mr-1">
+              <div class="col"><button type="button" class="btn btn-outline-dark mb-3 float-right">+ Add user</button></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

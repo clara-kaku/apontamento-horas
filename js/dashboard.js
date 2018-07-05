@@ -1,35 +1,92 @@
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
+var donutChart = document.getElementById("donut");
+var donut = new Chart(donutChart, {
+    type: 'doughnut',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["Project 1", "Project 2", "Project 3"],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [4, 2, 3],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
+                'rgba(220, 53, 69, 1)',
+                'rgba(145, 39, 171, 1)',
+                'rgba(36, 85, 164, 1)'
+            ]
         }]
     },
     options: {
+        cutoutPercentage: 85,
+
+        legend: {
+            position:'bottom',
+            labels:{
+                pointStyle:'circle',
+                usePointStyle:true
+            }
+        }
+    }
+});
+
+var barChart = document.getElementById("bar");
+var bar = new Chart(barChart, {
+    type: 'line',
+    data: {
+        labels: ["May", "June", "July"],
+        datasets: [{
+            label: "Project 1",
+            data: [10, 20, 45],
+            borderColor: [
+                'rgba(220, 53, 69, 1)'
+            ],
+            backgroundColor: [
+                'rgba(220, 53, 69, 1)'
+            ],
+            fill: false
+          },
+          {
+            label: "Project 2",
+            data: [2, 8, 5],
+            borderColor: [
+                'rgba(145, 39, 171, 1)'
+            ],
+            backgroundColor: [
+                'rgba(145, 39, 171, 1)'
+            ],
+            fill: false
+          },
+          {
+            label: "Project 3",
+            data: [35, 5, 10],
+            borderColor: [
+                'rgba(36, 85, 164, 1)'
+            ],
+            backgroundColor: [
+                'rgba(36, 85, 164, 1)'
+            ],
+            fill: false
+          }],
+
+    },
+    options: {
+        legend: {
+            position:'bottom',
+            labels:{
+                pointStyle:'circle',
+                usePointStyle:true
+            }
+        },
+
         scales: {
             yAxes: [{
+                gridLines: {
+                    display: false
+                },
                 ticks: {
                     beginAtZero:true
+                }
+            }],
+
+            xAxes: [{
+                gridLines: {
+                    display: false
                 }
             }]
         }
