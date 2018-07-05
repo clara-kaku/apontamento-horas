@@ -10,29 +10,34 @@
 
     <title>Login</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/form.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
 
   </head>
   <body>
-        <div class="container-fluid background"></div>
-        <form class="form-signin">
-        <div class="text-center mb-4">
-            <img class="mb-4" src="imgs/user.svg" alt="" width="120" height="120">
-            <h1 class="h3 mb-3 font-weight-normal">Login</h1>
-        </div>
+        <!-- <div class="container-fluid background"></div> -->
+        <div class="container form-wrapper">
+            <form class="container form-signin">
+                <div class="img-login pt-3">
+                    <img src="imgs/user.svg" alt="" width="120" height="120">
+                </div>
+                <div class="text-center mb-3 pt-3">
+                    <p class="display-4 mb-3 text-white">Login</p>
+                </div>
 
-        <div class="form-label-group">
-            <input type="email" id="inputEmail" class="form-control form-transparent-input" placeholder="Email address" required autofocus>
-            <label for="inputEmail">Email address</label>
-        </div>
+                <div class="form-label-group pb-3">
+                    <input type="email" id="inputEmail" class="form-control form-transparent-input" placeholder="Email address" required autofocus>
+                    <label for="inputEmail">Email address</label>
+                </div>
 
-        <div class="form-label-group">
-            <input type="password" id="inputPassword" class="form-control form-transparent-input" placeholder="Password" required>
-            <label for="inputPassword">Password</label>
-        </div>
+                <div class="form-label-group pb-3">
+                    <input type="password" id="inputPassword" class="form-control form-transparent-input" placeholder="Password" required>
+                    <label for="inputPassword">Password</label>
+                </div>
 
-        <button class="btn btn-info btn-lg btn-block" type="submit">Log me in!</button>
-        <!-- <span class="float-right form-span">Don't have an account? <a href="register.html">Sign up</a></span> -->
-        </form>
+                <div class="pb-3">
+                    <button class="btn btn-info btn-lg btn-block" type="submit">Log me in</button>
+                </div>
+            </form>
+        </div>
   </body>
 </html>

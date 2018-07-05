@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-  background: #36D1DC;
+  /* background: #36D1DC; */
   /* background: -webkit-linear-gradient(to right, #3A7fD5, #6EBCE2);
   background: linear-gradient(to right, #3A7fD5, #6EBCE2); */
   background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
